@@ -1,0 +1,863 @@
+Part1:
+./gradlew run --args="part1getcounts input_access_log hostname_country.csv part1join"
+
+Denmark	2
+Canada	4
+Canada	7
+Intranet	188
+United States	1
+United States	12
+United States	3
+United States	6
+Unknown Location	1
+Unknown Location	4
+Unknown Location	1
+Unknown Location	1
+Unknown Location	12
+Canada	8
+Canada	1
+Unknown Location	13
+Unknown Location	2
+Unknown Location	1
+United States	13
+United States	1
+United States	1
+United States	1
+Unknown Location	15
+United States	2
+United States	11
+United States	4
+United States	1
+Unknown Location	14
+United States	1
+Unknown Location	12
+United States	1
+United States	1
+Intranet	10
+Unknown Location	1
+Unknown Location	4
+Unknown Location	3
+Unknown Location	1
+Unknown Location	1
+Unknown Location	452
+Unknown Location	1
+Unknown Location	1
+Unknown Location	5
+Unknown Location	3
+Unknown Location	1
+Unknown Location	2
+Unknown Location	1
+Unknown Location	3
+Unknown Location	2
+Unknown Location	4
+Unknown Location	3
+Unknown Location	1
+Unknown Location	2
+Netherlands	1
+Unknown Location	2
+Unknown Location	2
+Unknown Location	1
+France	1
+United States	2
+Unknown Location	4
+United States	1
+Unknown Location	2
+Unknown Location	7
+Unknown Location	1
+Unknown Location	1
+Unknown Location	4
+Australia	10
+Unknown Location	44
+Robot	9
+Unknown Location	1
+Unknown Location	3
+Unknown Location	1
+Unknown Location	5
+United Kingdom	3
+Denmark	2
+Unknown Location	2
+Unknown Location	7
+Unknown Location	2
+Canada	3
+Canada	7
+Canada	32
+Canada	36
+Canada	6
+Unknown Location	1
+Spain	4
+Mexico	1
+Unknown Location	22
+Unknown Location	1
+Canada	7
+Unknown Location	1
+France	1
+United States	5
+Wherever You Want to Ship	13
+Robot	1
+Robot	1
+Robot	3
+Robot	1
+Robot	1
+Robot	8
+Robot	1
+Robot	2
+Robot	1
+Robot	1
+Robot	7
+Robot	5
+Robot	1
+Robot	1
+Robot	1
+Robot	2
+Robot	1
+Robot	1
+Robot	1
+Robot	1
+Robot	1
+Robot	3
+Robot	1
+Robot	2
+Robot	3
+Robot	4
+Robot	2
+Robot	2
+Robot	1
+Robot	2
+Robot	2
+Robot	1
+Robot	1
+Robot	1
+Robot	1
+Robot	2
+Robot	1
+Unknown Location	1
+France	14
+Unknown Location	29
+Canada	4
+Unknown Location	3
+Australia	7
+Unknown Location	1
+Unknown Location	1
+Unknown Location	12
+Unknown Location	3
+Unknown Location	11
+Taiwan	1
+Germany	12
+Germany	1
+Netherlands	1
+Unknown Location	13
+Unknown Location	1
+Unknown Location	1
+Unknown Location	1
+Unknown Location	1
+Canada	1
+Unknown Location	5
+Unknown Location	3
+Israel	19
+United States	1
+United States	14
+Canada	1
+United Kingdom	1
+United Kingdom	2
+Unknown Location	4
+Canada	4
+Unknown Location	28
+Unknown Location	13
+United States	5
+Finland	1
+Canada	2
+Canada	1
+Canada	3
+Los Alamos	1
+Korea	4
+
+./gradlew run --args="part1sum part1join/part-r-00000 part1sum"
+
+Australia	17
+Canada	127
+Denmark	4
+Finland	1
+France	16
+Germany	13
+Intranet	198
+Israel	19
+Korea	4
+Los Alamos	1
+Mexico	1
+Netherlands	2
+Robot	80
+Spain	4
+Taiwan	1
+United Kingdom	6
+United States	87
+Unknown Location	812
+Wherever You Want to Ship	13
+
+./gradlew run --args="AccessLog2reverse part1sum/part-r-00000 part1final"
+
+Unknown Location	812
+Intranet	198
+Canada	127
+United States	87
+Robot	80
+Israel	19
+Australia	17
+France	16
+Wherever You Want to Ship	13
+Germany	13
+United Kingdom	6
+Korea	4
+Spain	4
+Denmark	4
+Netherlands	2
+Mexico	1
+Taiwan	1
+Finland	1
+Los Alamos	1
+
+
+
+Part 2:
+./gradlew run --args="part2join input_access_log hostname_country.csv part2join"
+
+Denmark /favicon.ico	2
+Canada /images/msgops.JPG	4
+Canada /icons/mailman.jpg	7
+Intranet /cgi-bin/mailgraph.cgi/mailgraph_3_err.png	188
+United States /SpamAssassin.html	1
+United States /twiki/bin/view/Main/WebHome	12
+United States /mailman/listinfo/ppwc	3
+United States /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	6
+Unknown Location /pipermail/cipg/2003-november.txt	1
+Unknown Location /images/msgops.JPG	4
+Unknown Location /mailman/listinfo/webber	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /twiki/bin/view/Main/DCCAndPostFix	12
+Canada /images/image005.jpg	8
+Canada /	1
+Unknown Location /dccstats/index.html	13
+Unknown Location /twiki/bin/view/Main/WebHome	2
+Unknown Location /AmavisNew.html	1
+United States /dccstats/stats-spam-ratio.1month.png	13
+United States /twiki/bin/view/Main/SpamAssassinDeleting	1
+United States /twiki/bin/view/Main/SpamAssassinDeleting	1
+United States /twiki/bin/view/Main/SpamAssassinDeleting	1
+Unknown Location /twiki/bin/view/Main/Relay_Domains	15
+United States /AmavisNew.html	2
+United States /	11
+United States /mailman/listinfo/ppwc	4
+United States /razor.html	1
+Unknown Location /twiki/bin/view/Main/SideBar	14
+United States /LateEmail.html	1
+Unknown Location /dccstats/stats-spam-ratio.1year.png	12
+United States /mailman/listinfo/webber	1
+United States /	1
+Intranet /cgi-bin/mailgraph.cgi/mailgraph_3_err.png	10
+Unknown Location /pipermail/webber/2004-January/000000.html	1
+Unknown Location /icons/PythonPowered.png	4
+Unknown Location /MSOffice/cltreq.asp?UL=1&ACT=4&BUILD=2614&STRMVER=4&CAPREQ=0	3
+Unknown Location /SpamAssassin.html	1
+Unknown Location /razor.html	1
+Unknown Location /twiki/bin/view/TWiki/TablePlugin?skin=print	452
+Unknown Location /twiki/bin/view/Main/SpamAssassinDeleting	1
+Unknown Location /twiki/bin/view/Main/SpamAssassinDeleting	1
+Unknown Location /twiki/bin/view/Sandbox/WebHome	5
+Unknown Location /	3
+Unknown Location /	1
+Unknown Location /	2
+Unknown Location /	1
+Unknown Location /	3
+Unknown Location /razor.html	2
+Unknown Location /icons/gnu-head-tiny.jpg	4
+Unknown Location /twiki/bin/view/Main/WebHome	3
+Unknown Location /RBL.html	1
+Unknown Location /twiki/bin/view/Main/SpamAssassinAndPostFix	2
+Netherlands /	1
+Unknown Location /LateEmail.html	2
+Unknown Location /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	2
+Unknown Location /AmavisNew.html	1
+France /razor.html	1
+United States /razor.html	2
+Unknown Location /mailman/listinfo/webber	4
+United States /AmavisNew.html	1
+Unknown Location /favicon.ico	2
+Unknown Location /twiki/bin/view/Main/SpamAssassinTaggingOnly	7
+Unknown Location /razor.html	1
+Unknown Location /razor.html	1
+Unknown Location /clients.html	4
+Australia /mailman/listinfo/cnc_notice	10
+Unknown Location /twiki/bin/rdiff/TWiki/ManagingTopics?rev1=1.16&rev2=1.15	44
+Robot /twiki/bin/view/Sandbox/WebChanges	9
+Unknown Location /pipermail/cncce/2004-January/000001.html	1
+Unknown Location /pipermail/cncce/2004-January.txt	3
+Unknown Location /SpamAssassin.html	1
+Unknown Location /twiki/bin/view/Main/WebHome	5
+United Kingdom /DCC.html	3
+Denmark /twiki/bin/view/Main/WebHome	2
+Unknown Location /twiki/bin/view/Main/SpamAssassinTaggingOnly	2
+Unknown Location /favicon.ico	7
+Unknown Location /razor.html	2
+Canada /pipermail/cnc_notice/2003-December.txt	3
+Canada /twiki/bin/view/Main/WebHome	7
+Canada /cgi-bin/mailgraph.cgi/mailgraph_3.png	32
+Canada /icons/gnu-head-tiny.jpg	36
+Canada /icons/PythonPowered.png	6
+Unknown Location /AmavisNew.html	1
+Spain /twiki/bin/view/Main/WebHome	4
+Mexico /razor.html	1
+Unknown Location /dccstats/stats-spam.1day.png	22
+Unknown Location /SpamAssassin.html	1
+Canada /	7
+Unknown Location /razor.html	1
+France /	1
+United States /twiki/bin/view/Main/WebHome	5
+Wherever You Want to Ship /dccstats/stats-hashes.1year.png	13
+Robot /twiki/bin/view/Know/WebHome	1
+Robot /robots.txt	1
+Robot /twiki/bin/oops/TWiki/WikiWikiClones	3
+Robot /twiki/bin/oops/TWiki/FileAttachment	1
+Robot /twiki/bin/oops/Know/PublicSupported	1
+Robot /robots.txt	8
+Robot /twiki/bin/oops/Main/KevinWGage	1
+Robot /twiki/bin/oops/Know/WinDoze95Crash	2
+Robot /twiki/bin/oops/Main/T	1
+Robot /twiki/bin/oops/TWiki/InterwikiPlugin	1
+Robot /robots.txt	7
+Robot /robots.txt	5
+Robot /robots.txt	1
+Robot /twiki/bin/oops/Main/SpamAssassinTaggingOnly	1
+Robot /twiki/bin/oops/TWiki/TablePlugin	1
+Robot /twiki/bin/oops/TWiki/Wik	2
+Robot /twiki/bin/oops/TWiki/JohnAltstadt	1
+Robot /twiki/bin/oops/TWiki/InterWikis	1
+Robot /twiki/bin/view/Main/LondonOffice	1
+Robot /twiki/bin/oops/TWiki/1000	1
+Robot /twiki/bin/view/Main/TWikiAdminGroup	1
+Robot /twiki/bin/view/Know/WebStatistics	3
+Robot /twiki/bin/view/Main/DCCAndPostFix	1
+Robot /twiki/bin/oops/TWiki/RegularExp	2
+Robot /twiki/bin/oops/Sandbox/WebChanges	3
+Robot /twiki/bin/oops/TWiki/NicholasLee	4
+Robot /twiki/bin/oops/Sandbox/WebStatistics	2
+Robot /twiki/bin/oops/TWiki/TWikiAccessControl	2
+Robot /twiki/bin/oops/Main/TWi	1
+Robot /twiki/bin/view/Main/SanJoseOffice	2
+Robot /twiki/bin/oops/TWiki/TextFormattingRules	2
+Robot /twiki/bin/oops/TWiki/TWikiVariables	1
+Robot /	1
+Robot /twiki/bin/oops/TWiki/WikiTopic	1
+Robot /twiki/bin/oops/TWiki/SvenDowideit	1
+Robot /twiki/bin/oops/Main/Mi	2
+Robot /twiki/bin/oops/Main/TWikiUsers	1
+Unknown Location /razor.html	1
+France /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	14
+Unknown Location /dccstats/stats-spam.1month.png	29
+Canada /images/msgops.JPG	4
+Unknown Location /robots.txt	3
+Australia /twiki/bin/view/Main/SpamAssassinAndPostFix	7
+Unknown Location /AmavisNew.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /dccstats/stats-spam-ratio.1day.png	12
+Unknown Location /twiki/bin/view/Main/WebHome	3
+Unknown Location /twiki/bin/view/Main/RelayGateway	11
+Taiwan /M83A	1
+Germany /twiki/pub/TWiki/TWikiDocGraphics/help.gif	12
+Germany /SpamAssassin.html	1
+Netherlands /SpamAssassin.html	1
+Unknown Location /twiki/bin/view/Main/SpamAssassinDeleting	13
+Unknown Location /razor.html	1
+Unknown Location /razor.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /AmavisNew.html	1
+Canada /pipermail/cncce/2004-January/000001.html	1
+Unknown Location /favicon.ico	5
+Unknown Location /favicon.ico	3
+Israel /	19
+United States /twiki/bin/view/Main/SpamAssassinAndPostFix	1
+United States /twiki/bin/view/Main/PostfixCmd	14
+Canada /LateEmail.html	1
+United Kingdom /razor.html	1
+United Kingdom /favicon.ico	2
+Unknown Location /	4
+Canada /mailman/listinfo/ppwc	4
+Unknown Location /razor.html	28
+Unknown Location /twiki/bin/view/Main/KevinWGagel	13
+United States /twiki/bin/view/Main/RelayGateway	5
+Finland /razor.html	1
+Canada /SpamAssassin.html	2
+Canada /images/image004.jpg	1
+Canada /images/image005.jpg	3
+Los Alamos /razor.html	1
+Korea /mailman/listinfo/cncce	4
+
+./gradlew run --args="part2sort part2join/part-r-00000 part3final"
+
+Australia /mailman/listinfo/cnc_notice	10
+Australia /twiki/bin/view/Main/SpamAssassinAndPostFix	7
+Canada /	8
+Canada /LateEmail.html	1
+Canada /SpamAssassin.html	2
+Canada /cgi-bin/mailgraph.cgi/mailgraph_3.png	32
+Canada /icons/PythonPowered.png	6
+Canada /icons/gnu-head-tiny.jpg	36
+Canada /icons/mailman.jpg	7
+Canada /images/image004.jpg	1
+Canada /images/image005.jpg	11
+Canada /images/msgops.JPG	8
+Canada /mailman/listinfo/ppwc	4
+Canada /pipermail/cnc_notice/2003-December.txt	3
+Canada /pipermail/cncce/2004-January/000001.html	1
+Canada /twiki/bin/view/Main/WebHome	7
+Denmark /favicon.ico	2
+Denmark /twiki/bin/view/Main/WebHome	2
+Finland /razor.html	1
+France /	1
+France /razor.html	1
+France /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	14
+Germany /SpamAssassin.html	1
+Germany /twiki/pub/TWiki/TWikiDocGraphics/help.gif	12
+Intranet /cgi-bin/mailgraph.cgi/mailgraph_3_err.png	198
+Israel /	19
+Korea /mailman/listinfo/cncce	4
+Los Alamos /razor.html	1
+Mexico /razor.html	1
+Netherlands /	1
+Netherlands /SpamAssassin.html	1
+Robot /	1
+Robot /robots.txt	22
+Robot /twiki/bin/oops/Know/PublicSupported	1
+Robot /twiki/bin/oops/Know/WinDoze95Crash	2
+Robot /twiki/bin/oops/Main/KevinWGage	1
+Robot /twiki/bin/oops/Main/Mi	2
+Robot /twiki/bin/oops/Main/SpamAssassinTaggingOnly	1
+Robot /twiki/bin/oops/Main/T	1
+Robot /twiki/bin/oops/Main/TWi	1
+Robot /twiki/bin/oops/Main/TWikiUsers	1
+Robot /twiki/bin/oops/Sandbox/WebChanges	3
+Robot /twiki/bin/oops/Sandbox/WebStatistics	2
+Robot /twiki/bin/oops/TWiki/1000	1
+Robot /twiki/bin/oops/TWiki/FileAttachment	1
+Robot /twiki/bin/oops/TWiki/InterWikis	1
+Robot /twiki/bin/oops/TWiki/InterwikiPlugin	1
+Robot /twiki/bin/oops/TWiki/JohnAltstadt	1
+Robot /twiki/bin/oops/TWiki/NicholasLee	4
+Robot /twiki/bin/oops/TWiki/RegularExp	2
+Robot /twiki/bin/oops/TWiki/SvenDowideit	1
+Robot /twiki/bin/oops/TWiki/TWikiAccessControl	2
+Robot /twiki/bin/oops/TWiki/TWikiVariables	1
+Robot /twiki/bin/oops/TWiki/TablePlugin	1
+Robot /twiki/bin/oops/TWiki/TextFormattingRules	2
+Robot /twiki/bin/oops/TWiki/Wik	2
+Robot /twiki/bin/oops/TWiki/WikiTopic	1
+Robot /twiki/bin/oops/TWiki/WikiWikiClones	3
+Robot /twiki/bin/view/Know/WebHome	1
+Robot /twiki/bin/view/Know/WebStatistics	3
+Robot /twiki/bin/view/Main/DCCAndPostFix	1
+Robot /twiki/bin/view/Main/LondonOffice	1
+Robot /twiki/bin/view/Main/SanJoseOffice	2
+Robot /twiki/bin/view/Main/TWikiAdminGroup	1
+Robot /twiki/bin/view/Sandbox/WebChanges	9
+Spain /twiki/bin/view/Main/WebHome	4
+Taiwan /M83A	1
+United Kingdom /DCC.html	3
+United Kingdom /favicon.ico	2
+United Kingdom /razor.html	1
+United States /	12
+United States /AmavisNew.html	3
+United States /LateEmail.html	1
+United States /SpamAssassin.html	1
+United States /dccstats/stats-spam-ratio.1month.png	13
+United States /mailman/listinfo/ppwc	7
+United States /mailman/listinfo/webber	1
+United States /razor.html	3
+United States /twiki/bin/view/Main/PostfixCmd	14
+United States /twiki/bin/view/Main/RelayGateway	5
+United States /twiki/bin/view/Main/SpamAssassinAndPostFix	1
+United States /twiki/bin/view/Main/SpamAssassinDeleting	3
+United States /twiki/bin/view/Main/WebHome	17
+United States /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	6
+Unknown Location /	14
+Unknown Location /AmavisNew.html	8
+Unknown Location /LateEmail.html	2
+Unknown Location /MSOffice/cltreq.asp?UL=1&ACT=4&BUILD=2614&STRMVER=4&CAPREQ=0	3
+Unknown Location /RBL.html	1
+Unknown Location /SpamAssassin.html	3
+Unknown Location /clients.html	4
+Unknown Location /dccstats/index.html	13
+Unknown Location /dccstats/stats-spam-ratio.1day.png	12
+Unknown Location /dccstats/stats-spam-ratio.1year.png	12
+Unknown Location /dccstats/stats-spam.1day.png	22
+Unknown Location /dccstats/stats-spam.1month.png	29
+Unknown Location /favicon.ico	17
+Unknown Location /icons/PythonPowered.png	4
+Unknown Location /icons/gnu-head-tiny.jpg	4
+Unknown Location /images/msgops.JPG	4
+Unknown Location /mailman/listinfo/webber	5
+Unknown Location /pipermail/cipg/2003-november.txt	1
+Unknown Location /pipermail/cncce/2004-January.txt	3
+Unknown Location /pipermail/cncce/2004-January/000001.html	1
+Unknown Location /pipermail/webber/2004-January/000000.html	1
+Unknown Location /razor.html	39
+Unknown Location /robots.txt	3
+Unknown Location /twiki/bin/rdiff/TWiki/ManagingTopics?rev1=1.16&rev2=1.15	44
+Unknown Location /twiki/bin/view/Main/DCCAndPostFix	12
+Unknown Location /twiki/bin/view/Main/KevinWGagel	13
+Unknown Location /twiki/bin/view/Main/RelayGateway	11
+Unknown Location /twiki/bin/view/Main/Relay_Domains	15
+Unknown Location /twiki/bin/view/Main/SideBar	14
+Unknown Location /twiki/bin/view/Main/SpamAssassinAndPostFix	2
+Unknown Location /twiki/bin/view/Main/SpamAssassinDeleting	15
+Unknown Location /twiki/bin/view/Main/SpamAssassinTaggingOnly	9
+Unknown Location /twiki/bin/view/Main/WebHome	13
+Unknown Location /twiki/bin/view/Sandbox/WebHome	5
+Unknown Location /twiki/bin/view/TWiki/TablePlugin?skin=print	452
+Unknown Location /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	2
+Wherever You Want to Ship /dccstats/stats-hashes.1year.png	13
+
+
+
+Part 3:
+./gradlew run --args="part3join input_access_log hostname_country.csv part3join"
+
+/favicon.ico	Denmark
+/images/msgops.JPG	Canada
+/icons/mailman.jpg	Canada
+/cgi-bin/mailgraph.cgi/mailgraph_3_err.png	Intranet
+/SpamAssassin.html	United States
+/twiki/bin/view/Main/WebHome	United States
+/mailman/listinfo/ppwc	United States
+/twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	United States
+/pipermail/cipg/2003-november.txt	Unknown Location
+/images/msgops.JPG	Unknown Location
+/mailman/listinfo/webber	Unknown Location
+/AmavisNew.html	Unknown Location
+/twiki/bin/view/Main/DCCAndPostFix	Unknown Location
+/images/image005.jpg	Canada
+/	Canada
+/dccstats/index.html	Unknown Location
+/twiki/bin/view/Main/WebHome	Unknown Location
+/AmavisNew.html	Unknown Location
+/dccstats/stats-spam-ratio.1month.png	United States
+/twiki/bin/view/Main/SpamAssassinDeleting	United States
+/twiki/bin/view/Main/SpamAssassinDeleting	United States
+/twiki/bin/view/Main/SpamAssassinDeleting	United States
+/twiki/bin/view/Main/Relay_Domains	Unknown Location
+/AmavisNew.html	United States
+/	United States
+/mailman/listinfo/ppwc	United States
+/razor.html	United States
+/twiki/bin/view/Main/SideBar	Unknown Location
+/LateEmail.html	United States
+/dccstats/stats-spam-ratio.1year.png	Unknown Location
+/mailman/listinfo/webber	United States
+/	United States
+/cgi-bin/mailgraph.cgi/mailgraph_3_err.png	Intranet
+/pipermail/webber/2004-January/000000.html	Unknown Location
+/icons/PythonPowered.png	Unknown Location
+/MSOffice/cltreq.asp?UL=1&ACT=4&BUILD=2614&STRMVER=4&CAPREQ=0	Unknown Location
+/SpamAssassin.html	Unknown Location
+/razor.html	Unknown Location
+/twiki/bin/view/TWiki/TablePlugin?skin=print	Unknown Location
+/twiki/bin/view/Main/SpamAssassinDeleting	Unknown Location
+/twiki/bin/view/Main/SpamAssassinDeleting	Unknown Location
+/twiki/bin/view/Sandbox/WebHome	Unknown Location
+/	Unknown Location
+/	Unknown Location
+/	Unknown Location
+/	Unknown Location
+/	Unknown Location
+/razor.html	Unknown Location
+/icons/gnu-head-tiny.jpg	Unknown Location
+/twiki/bin/view/Main/WebHome	Unknown Location
+/RBL.html	Unknown Location
+/twiki/bin/view/Main/SpamAssassinAndPostFix	Unknown Location
+/	Netherlands
+/LateEmail.html	Unknown Location
+/twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	Unknown Location
+/AmavisNew.html	Unknown Location
+/razor.html	France
+/razor.html	United States
+/mailman/listinfo/webber	Unknown Location
+/AmavisNew.html	United States
+/favicon.ico	Unknown Location
+/twiki/bin/view/Main/SpamAssassinTaggingOnly	Unknown Location
+/razor.html	Unknown Location
+/razor.html	Unknown Location
+/clients.html	Unknown Location
+/mailman/listinfo/cnc_notice	Australia
+/twiki/bin/rdiff/TWiki/ManagingTopics?rev1=1.16&rev2=1.15	Unknown Location
+/twiki/bin/view/Sandbox/WebChanges	Robot
+/pipermail/cncce/2004-January/000001.html	Unknown Location
+/pipermail/cncce/2004-January.txt	Unknown Location
+/SpamAssassin.html	Unknown Location
+/twiki/bin/view/Main/WebHome	Unknown Location
+/DCC.html	United Kingdom
+/twiki/bin/view/Main/WebHome	Denmark
+/twiki/bin/view/Main/SpamAssassinTaggingOnly	Unknown Location
+/favicon.ico	Unknown Location
+/razor.html	Unknown Location
+/pipermail/cnc_notice/2003-December.txt	Canada
+/twiki/bin/view/Main/WebHome	Canada
+/cgi-bin/mailgraph.cgi/mailgraph_3.png	Canada
+/icons/gnu-head-tiny.jpg	Canada
+/icons/PythonPowered.png	Canada
+/AmavisNew.html	Unknown Location
+/twiki/bin/view/Main/WebHome	Spain
+/razor.html	Mexico
+/dccstats/stats-spam.1day.png	Unknown Location
+/SpamAssassin.html	Unknown Location
+/	Canada
+/razor.html	Unknown Location
+/	France
+/twiki/bin/view/Main/WebHome	United States
+/dccstats/stats-hashes.1year.png	Wherever You Want to Ship
+/twiki/bin/view/Know/WebHome	Robot
+/robots.txt	Robot
+/twiki/bin/oops/TWiki/WikiWikiClones	Robot
+/twiki/bin/oops/TWiki/FileAttachment	Robot
+/twiki/bin/oops/Know/PublicSupported	Robot
+/robots.txt	Robot
+/twiki/bin/oops/Main/KevinWGage	Robot
+/twiki/bin/oops/Know/WinDoze95Crash	Robot
+/twiki/bin/oops/Main/T	Robot
+/twiki/bin/oops/TWiki/InterwikiPlugin	Robot
+/robots.txt	Robot
+/robots.txt	Robot
+/robots.txt	Robot
+/twiki/bin/oops/Main/SpamAssassinTaggingOnly	Robot
+/twiki/bin/oops/TWiki/TablePlugin	Robot
+/twiki/bin/oops/TWiki/Wik	Robot
+/twiki/bin/oops/TWiki/JohnAltstadt	Robot
+/twiki/bin/oops/TWiki/InterWikis	Robot
+/twiki/bin/view/Main/LondonOffice	Robot
+/twiki/bin/oops/TWiki/1000	Robot
+/twiki/bin/view/Main/TWikiAdminGroup	Robot
+/twiki/bin/view/Know/WebStatistics	Robot
+/twiki/bin/view/Main/DCCAndPostFix	Robot
+/twiki/bin/oops/TWiki/RegularExp	Robot
+/twiki/bin/oops/Sandbox/WebChanges	Robot
+/twiki/bin/oops/TWiki/NicholasLee	Robot
+/twiki/bin/oops/Sandbox/WebStatistics	Robot
+/twiki/bin/oops/TWiki/TWikiAccessControl	Robot
+/twiki/bin/oops/Main/TWi	Robot
+/twiki/bin/view/Main/SanJoseOffice	Robot
+/twiki/bin/oops/TWiki/TextFormattingRules	Robot
+/twiki/bin/oops/TWiki/TWikiVariables	Robot
+/	Robot
+/twiki/bin/oops/TWiki/WikiTopic	Robot
+/twiki/bin/oops/TWiki/SvenDowideit	Robot
+/twiki/bin/oops/Main/Mi	Robot
+/twiki/bin/oops/Main/TWikiUsers	Robot
+/razor.html	Unknown Location
+/twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	France
+/dccstats/stats-spam.1month.png	Unknown Location
+/images/msgops.JPG	Canada
+/robots.txt	Unknown Location
+/twiki/bin/view/Main/SpamAssassinAndPostFix	Australia
+/AmavisNew.html	Unknown Location
+/AmavisNew.html	Unknown Location
+/dccstats/stats-spam-ratio.1day.png	Unknown Location
+/twiki/bin/view/Main/WebHome	Unknown Location
+/twiki/bin/view/Main/RelayGateway	Unknown Location
+/M83A	Taiwan
+/twiki/pub/TWiki/TWikiDocGraphics/help.gif	Germany
+/SpamAssassin.html	Germany
+/SpamAssassin.html	Netherlands
+/twiki/bin/view/Main/SpamAssassinDeleting	Unknown Location
+/razor.html	Unknown Location
+/razor.html	Unknown Location
+/AmavisNew.html	Unknown Location
+/AmavisNew.html	Unknown Location
+/pipermail/cncce/2004-January/000001.html	Canada
+/favicon.ico	Unknown Location
+/favicon.ico	Unknown Location
+/	Israel
+/twiki/bin/view/Main/SpamAssassinAndPostFix	United States
+/twiki/bin/view/Main/PostfixCmd	United States
+/LateEmail.html	Canada
+/razor.html	United Kingdom
+/favicon.ico	United Kingdom
+/	Unknown Location
+/mailman/listinfo/ppwc	Canada
+/razor.html	Unknown Location
+/twiki/bin/view/Main/KevinWGagel	Unknown Location
+/twiki/bin/view/Main/RelayGateway	United States
+/razor.html	Finland
+/SpamAssassin.html	Canada
+/images/image004.jpg	Canada
+/images/image005.jpg	Canada
+/razor.html	Los Alamos
+/mailman/listinfo/cncce	Korea
+
+./gradlew run --args="part3sort part3join/part-r-00000 part3final"
+
+Australia /twiki/bin/view/Main/SpamAssassinAndPostFix	7
+Australia /mailman/listinfo/cnc_notice	10
+Canada /	1
+Canada /LateEmail.html	1
+Canada /images/image004.jpg	1
+Canada /pipermail/cncce/2004-January/000001.html	1
+Canada /SpamAssassin.html	2
+Canada /images/image005.jpg	3
+Canada /pipermail/cnc_notice/2003-December.txt	3
+Canada /images/msgops.JPG	4
+Canada /images/msgops.JPG	4
+Canada /mailman/listinfo/ppwc	4
+Canada /icons/PythonPowered.png	6
+Canada /	7
+Canada /icons/mailman.jpg	7
+Canada /twiki/bin/view/Main/WebHome	7
+Canada /images/image005.jpg	8
+Canada /cgi-bin/mailgraph.cgi/mailgraph_3.png	32
+Canada /icons/gnu-head-tiny.jpg	36
+Denmark /twiki/bin/view/Main/WebHome	2
+Denmark /favicon.ico	2
+Finland /razor.html	1
+France /razor.html	1
+France /	1
+France /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	14
+Germany /SpamAssassin.html	1
+Germany /twiki/pub/TWiki/TWikiDocGraphics/help.gif	12
+Intranet /cgi-bin/mailgraph.cgi/mailgraph_3_err.png	10
+Intranet /cgi-bin/mailgraph.cgi/mailgraph_3_err.png	188
+Israel /	19
+Korea /mailman/listinfo/cncce	4
+Los Alamos /razor.html	1
+Mexico /razor.html	1
+Netherlands /SpamAssassin.html	1
+Netherlands /	1
+Robot /twiki/bin/oops/TWiki/1000	1
+Robot /twiki/bin/view/Main/LondonOffice	1
+Robot /twiki/bin/oops/TWiki/InterWikis	1
+Robot /twiki/bin/oops/TWiki/JohnAltstadt	1
+Robot /twiki/bin/oops/TWiki/WikiTopic	1
+Robot /twiki/bin/oops/TWiki/TablePlugin	1
+Robot /twiki/bin/oops/Main/SpamAssassinTaggingOnly	1
+Robot /	1
+Robot /twiki/bin/view/Know/WebHome	1
+Robot /robots.txt	1
+Robot /twiki/bin/oops/TWiki/InterwikiPlugin	1
+Robot /twiki/bin/oops/TWiki/FileAttachment	1
+Robot /twiki/bin/oops/Know/PublicSupported	1
+Robot /twiki/bin/oops/TWiki/TWikiVariables	1
+Robot /twiki/bin/oops/Main/TWikiUsers	1
+Robot /twiki/bin/oops/Main/TWi	1
+Robot /twiki/bin/oops/Main/T	1
+Robot /twiki/bin/oops/Main/KevinWGage	1
+Robot /twiki/bin/oops/TWiki/SvenDowideit	1
+Robot /twiki/bin/view/Main/DCCAndPostFix	1
+Robot /robots.txt	1
+Robot /twiki/bin/view/Main/TWikiAdminGroup	1
+Robot /twiki/bin/oops/Know/WinDoze95Crash	2
+Robot /twiki/bin/oops/Main/Mi	2
+Robot /twiki/bin/oops/TWiki/TextFormattingRules	2
+Robot /twiki/bin/view/Main/SanJoseOffice	2
+Robot /twiki/bin/oops/TWiki/TWikiAccessControl	2
+Robot /twiki/bin/oops/TWiki/RegularExp	2
+Robot /twiki/bin/oops/TWiki/Wik	2
+Robot /twiki/bin/oops/Sandbox/WebStatistics	2
+Robot /twiki/bin/oops/Sandbox/WebChanges	3
+Robot /twiki/bin/oops/TWiki/WikiWikiClones	3
+Robot /twiki/bin/view/Know/WebStatistics	3
+Robot /twiki/bin/oops/TWiki/NicholasLee	4
+Robot /robots.txt	5
+Robot /robots.txt	7
+Robot /robots.txt	8
+Robot /twiki/bin/view/Sandbox/WebChanges	9
+Spain /twiki/bin/view/Main/WebHome	4
+Taiwan /M83A	1
+United Kingdom /razor.html	1
+United Kingdom /favicon.ico	2
+United Kingdom /DCC.html	3
+United States /razor.html	1
+United States /AmavisNew.html	1
+United States /	1
+United States /mailman/listinfo/webber	1
+United States /SpamAssassin.html	1
+United States /LateEmail.html	1
+United States /twiki/bin/view/Main/SpamAssassinDeleting	1
+United States /twiki/bin/view/Main/SpamAssassinDeleting	1
+United States /twiki/bin/view/Main/SpamAssassinDeleting	1
+United States /twiki/bin/view/Main/SpamAssassinAndPostFix	1
+United States /razor.html	2
+United States /AmavisNew.html	2
+United States /mailman/listinfo/ppwc	3
+United States /mailman/listinfo/ppwc	4
+United States /twiki/bin/view/Main/RelayGateway	5
+United States /twiki/bin/view/Main/WebHome	5
+United States /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	6
+United States /	11
+United States /twiki/bin/view/Main/WebHome	12
+United States /dccstats/stats-spam-ratio.1month.png	13
+United States /twiki/bin/view/Main/PostfixCmd	14
+Unknown Location /pipermail/cncce/2004-January/000001.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /razor.html	1
+Unknown Location /razor.html	1
+Unknown Location /SpamAssassin.html	1
+Unknown Location /razor.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /razor.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /SpamAssassin.html	1
+Unknown Location /razor.html	1
+Unknown Location /razor.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /RBL.html	1
+Unknown Location /	1
+Unknown Location /	1
+Unknown Location /twiki/bin/view/Main/SpamAssassinDeleting	1
+Unknown Location /twiki/bin/view/Main/SpamAssassinDeleting	1
+Unknown Location /razor.html	1
+Unknown Location /SpamAssassin.html	1
+Unknown Location /pipermail/webber/2004-January/000000.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /AmavisNew.html	1
+Unknown Location /mailman/listinfo/webber	1
+Unknown Location /pipermail/cipg/2003-november.txt	1
+Unknown Location /twiki/bin/view/Main/SpamAssassinTaggingOnly	2
+Unknown Location /favicon.ico	2
+Unknown Location /razor.html	2
+Unknown Location /twiki/bin/view/Main/SpamAssassinAndPostFix	2
+Unknown Location /LateEmail.html	2
+Unknown Location /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	2
+Unknown Location /twiki/bin/view/Main/WebHome	2
+Unknown Location /	2
+Unknown Location /razor.html	2
+Unknown Location /	3
+Unknown Location /MSOffice/cltreq.asp?UL=1&ACT=4&BUILD=2614&STRMVER=4&CAPREQ=0	3
+Unknown Location /pipermail/cncce/2004-January.txt	3
+Unknown Location /favicon.ico	3
+Unknown Location /robots.txt	3
+Unknown Location /twiki/bin/view/Main/WebHome	3
+Unknown Location /	3
+Unknown Location /twiki/bin/view/Main/WebHome	3
+Unknown Location /clients.html	4
+Unknown Location /	4
+Unknown Location /images/msgops.JPG	4
+Unknown Location /mailman/listinfo/webber	4
+Unknown Location /icons/PythonPowered.png	4
+Unknown Location /icons/gnu-head-tiny.jpg	4
+Unknown Location /twiki/bin/view/Main/WebHome	5
+Unknown Location /favicon.ico	5
+Unknown Location /twiki/bin/view/Sandbox/WebHome	5
+Unknown Location /favicon.ico	7
+Unknown Location /twiki/bin/view/Main/SpamAssassinTaggingOnly	7
+Unknown Location /twiki/bin/view/Main/RelayGateway	11
+Unknown Location /twiki/bin/view/Main/DCCAndPostFix	12
+Unknown Location /dccstats/stats-spam-ratio.1year.png	12
+Unknown Location /dccstats/stats-spam-ratio.1day.png	12
+Unknown Location /twiki/bin/view/Main/KevinWGagel	13
+Unknown Location /dccstats/index.html	13
+Unknown Location /twiki/bin/view/Main/SpamAssassinDeleting	13
+Unknown Location /twiki/bin/view/Main/SideBar	14
+Unknown Location /twiki/bin/view/Main/Relay_Domains	15
+Unknown Location /dccstats/stats-spam.1day.png	22
+Unknown Location /razor.html	28
+Unknown Location /dccstats/stats-spam.1month.png	29
+Unknown Location /twiki/bin/rdiff/TWiki/ManagingTopics?rev1=1.16&rev2=1.15	44
+Unknown Location /twiki/bin/view/TWiki/TablePlugin?skin=print	452
+Wherever You Want to Ship /dccstats/stats-hashes.1year.png	13
+

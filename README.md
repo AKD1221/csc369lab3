@@ -1,39 +1,23 @@
 Andy Do
-CSC 369 Lab 2
+CSC 369 Lab 3
 Professor Migler
 
-Did not change any of the reduce phases since all of them require just summing up the values given from the map phase. Outlined below are the key and values that we emit from our map phase as well as anything extra we do such as sorting by ascending. For mapreduces that take more than one for sorting the output of the first mapreduce becomes the input for the second mapreduce and then outputs the same file except the values are now sorted ascendingly.
-
-Changed a few of the dates in the given acces.log file to test for Calendar month/year for part5.
-
-
 Part 1:
-- Key is sa[6] which becomes URL path
-- Value is just 1 since we want count of each URL path
-- Sorted by ascending by using a second mapreduce and calling AccessLog2
+- Used 3 separate mapreduce jobs
+- First one joined input_access_log and hostname_country.csv using reduce-join. I ended up using reduce-join since it felt more intuitive for me to implement as 
+I could make separate mappers for each different input.
+- The second mapreduce job took as input part1join and summed up the total request count for each country
+- The third mapreduce job sorted our count of each country by using the inbuilt decreasingcomparator class
 
 Part 2:
-- Key is sa[8] which is the HTTP response code
-- Value is just 1 since we want count
-- Sorted by ascending with AccessLog2
+- Used 2 separate mapreduce jobs
+- Similar to part1, the first one used reduce-join to print out our desired output which was the country, url, and count
+- Created own WritableComparator called Composite key to handle our primary and secondary sorting which were Country and count
+- In our second mapreduce job the value was used to store the country and url as a string for output later since it is not used in our sorting
 
 Part 3:
-- Key is hardcoded ip address which in this case is "64.242.88.10"
-- Value is sa[9] which is the number of bytes sent
+- Used 2 separate mapreduce jobs
+- Similar to part1, the first one used reduce-join to print out our desired output which was the url and country name
+- Created own WritableComparator called part3UrlCountryPair to store the url and country name
+- Second mapreduce job used part3CountrySort to get each country that visited said url and print it out, removing duplicate country names
 
-Part 4:
-- Hardcoded URL of "/robots.txt"
-- Key is sa[0] which is the IPv4 that
-- Value is 1 which is used for count
-- Sorted by ascending with AccessLog2
-
-Part 5:
-- Convert our datetime that we are given to extract the month number and the year number
-- Our Key becomes a string of year + month (eg. Mar/2004 becomes 200403)
-- Value is 1 which is used for count
-
-Part 6:
-- Convert our datetime to get the day of the week 
-- Our Key becomes the day of the week as a string
-- Our value is the number of bytes sent
-- Sorted by ascending with AccessLog2
