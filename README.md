@@ -8,6 +8,7 @@ Part 1:
 I could make separate mappers for each different input.
 - The second mapreduce job took as input part1join and summed up the total request count for each country
 - The third mapreduce job sorted our count of each country by using the inbuilt decreasingcomparator class
+- Could have done multiply by -1 in mapper and then multiply by -1 again in reducer to also sort in descending order
 
 Part 2:
 - Used 2 separate mapreduce jobs
